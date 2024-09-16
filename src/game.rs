@@ -227,7 +227,7 @@ impl Game {
             .iter()
             .for_each(|enemy| enemy.draw(&mut buffer));
         self.collectible.draw(&mut buffer);
-        Hud::new(self.score, &self.player, self.height + 2).draw(&mut buffer);
+        Hud::Hud::new(self.score, &self.player, self.height + 2).draw(&mut buffer);
         self.stdout
             .write_all(&buffer)
             .expect("failed to write to stdout");
