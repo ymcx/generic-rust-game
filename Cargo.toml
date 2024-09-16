@@ -1,0 +1,10 @@
+[package]
+name = "application"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+num = "0.4.0"
+rand = "0.8.5"
+crossterm = "0.25.0"
+position-derive = { path = "src/position-derive" }
